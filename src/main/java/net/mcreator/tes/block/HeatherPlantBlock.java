@@ -36,6 +36,7 @@ import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -54,11 +55,11 @@ import java.util.List;
 import java.util.Collections;
 
 @TesModElements.ModElement.Tag
-public class WillowantherBlock extends TesModElements.ModElement {
-	@ObjectHolder("tes:willowanther")
+public class HeatherPlantBlock extends TesModElements.ModElement {
+	@ObjectHolder("tes:heather_plant")
 	public static final Block block = null;
-	public WillowantherBlock(TesModElements instance) {
-		super(instance, 4);
+	public HeatherPlantBlock(TesModElements instance) {
+		super(instance, 27);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -101,8 +102,8 @@ public class WillowantherBlock extends TesModElements.ModElement {
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
 									.tries(64).build())
 					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(5);
-			event.getRegistry().register(feature.setRegistryName("willowanther"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tes:willowanther"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("heather_plant"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tes:heather_plant"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
@@ -116,9 +117,14 @@ public class WillowantherBlock extends TesModElements.ModElement {
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS, MaterialColor.PURPLE).doesNotBlockMovement().sound(SoundType.PLANT)
+			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS, MaterialColor.PINK).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("willowanther");
+			setRegistryName("heather_plant");
+		}
+
+		@Override
+		public boolean isReplaceable(BlockState state, BlockItemUseContext useContext) {
+			return useContext.getItem().getItem() != this.asItem();
 		}
 
 		@Override

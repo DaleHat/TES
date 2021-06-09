@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "tes:blocks/heather",
+    "particle": "tes:blocks/heather"
+  }
+}

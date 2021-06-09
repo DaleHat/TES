@@ -36,7 +36,6 @@ import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -55,11 +54,11 @@ import java.util.List;
 import java.util.Collections;
 
 @TesModElements.ModElement.Tag
-public class HeatherBlock extends TesModElements.ModElement {
-	@ObjectHolder("tes:imperial")
+public class WilliowAntherPlantBlock extends TesModElements.ModElement {
+	@ObjectHolder("tes:williow_anther_plant")
 	public static final Block block = null;
-	public HeatherBlock(TesModElements instance) {
-		super(instance, 3);
+	public WilliowAntherPlantBlock(TesModElements instance) {
+		super(instance, 26);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -102,8 +101,8 @@ public class HeatherBlock extends TesModElements.ModElement {
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
 									.tries(64).build())
 					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(5);
-			event.getRegistry().register(feature.setRegistryName("imperial"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tes:imperial"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("williow_anther_plant"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tes:williow_anther_plant"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
@@ -117,14 +116,9 @@ public class HeatherBlock extends TesModElements.ModElement {
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS, MaterialColor.PINK).doesNotBlockMovement().sound(SoundType.PLANT)
+			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS, MaterialColor.PURPLE).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("imperial");
-		}
-
-		@Override
-		public boolean isReplaceable(BlockState state, BlockItemUseContext useContext) {
-			return useContext.getItem().getItem() != this.asItem();
+			setRegistryName("williow_anther_plant");
 		}
 
 		@Override

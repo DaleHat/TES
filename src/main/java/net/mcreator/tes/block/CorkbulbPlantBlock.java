@@ -55,11 +55,11 @@ import java.util.List;
 import java.util.Collections;
 
 @TesModElements.ModElement.Tag
-public class GoldKanetBlock extends TesModElements.ModElement {
-	@ObjectHolder("tes:gold_kanet")
+public class CorkbulbPlantBlock extends TesModElements.ModElement {
+	@ObjectHolder("tes:corkbulb_plant")
 	public static final Block block = null;
-	public GoldKanetBlock(TesModElements instance) {
-		super(instance, 14);
+	public CorkbulbPlantBlock(TesModElements instance) {
+		super(instance, 19);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -102,8 +102,8 @@ public class GoldKanetBlock extends TesModElements.ModElement {
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
 									.tries(64).build())
 					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(5);
-			event.getRegistry().register(feature.setRegistryName("gold_kanet"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tes:gold_kanet"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("corkbulb_plant"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tes:corkbulb_plant"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
@@ -117,9 +117,9 @@ public class GoldKanetBlock extends TesModElements.ModElement {
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS, MaterialColor.GOLD).doesNotBlockMovement().sound(SoundType.PLANT)
+			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS, MaterialColor.GRASS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("gold_kanet");
+			setRegistryName("corkbulb_plant");
 		}
 
 		@Override

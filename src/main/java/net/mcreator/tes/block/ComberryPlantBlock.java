@@ -12,13 +12,13 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.gen.feature.RandomPatchFeature;
 import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.DefaultFlowersFeature;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
+import net.minecraft.world.gen.blockplacer.DoublePlantBlockPlacer;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.World;
@@ -30,21 +30,19 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Direction;
-import net.minecraft.potion.Effects;
-import net.minecraft.pathfinding.PathNodeType;
+import net.minecraft.state.properties.DoubleBlockHalf;
+import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.loot.LootContext;
+import net.minecraft.item.TallBlockItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.item.BlockItem;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.FlowerBlock;
+import net.minecraft.block.DoublePlantBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -55,11 +53,11 @@ import java.util.List;
 import java.util.Collections;
 
 @TesModElements.ModElement.Tag
-public class BlackAntherBlock extends TesModElements.ModElement {
-	@ObjectHolder("tes:black_anther")
+public class ComberryPlantBlock extends TesModElements.ModElement {
+	@ObjectHolder("tes:comberry_plant")
 	public static final Block block = null;
-	public BlackAntherBlock(TesModElements instance) {
-		super(instance, 15);
+	public ComberryPlantBlock(TesModElements instance) {
+		super(instance, 22);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -67,7 +65,8 @@ public class BlackAntherBlock extends TesModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new BlockCustomFlower());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new TallBlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
@@ -80,12 +79,7 @@ public class BlackAntherBlock extends TesModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			feature = new DefaultFlowersFeature(BlockClusterFeatureConfig.field_236587_a_) {
-				@Override
-				public BlockState getFlowerToPlace(Random random, BlockPos bp, BlockClusterFeatureConfig fc) {
-					return block.getDefaultState();
-				}
-
+			feature = new RandomPatchFeature(BlockClusterFeatureConfig.field_236587_a_) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, BlockClusterFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
@@ -97,13 +91,12 @@ public class BlackAntherBlock extends TesModElements.ModElement {
 					return super.generate(world, generator, random, pos, config);
 				}
 			};
-			configuredFeature = feature
-					.withConfiguration(
-							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
-									.tries(64).build())
+			configuredFeature = feature.withConfiguration(
+					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new DoublePlantBlockPlacer()))
+							.tries(64).func_227317_b_().build())
 					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(5);
-			event.getRegistry().register(feature.setRegistryName("black_anther"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tes:black_anther"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("comberry_plant"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tes:comberry_plant"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
@@ -115,26 +108,16 @@ public class BlackAntherBlock extends TesModElements.ModElement {
 			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);
 	}
-	public static class BlockCustomFlower extends FlowerBlock {
+	public static class BlockCustomFlower extends DoublePlantBlock {
 		public BlockCustomFlower() {
-			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS, MaterialColor.BLACK).doesNotBlockMovement().sound(SoundType.PLANT)
+			super(Block.Properties.create(Material.PLANTS, MaterialColor.GRASS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("black_anther");
-		}
-
-		@Override
-		public boolean isReplaceable(BlockState state, BlockItemUseContext useContext) {
-			return useContext.getItem().getItem() != this.asItem();
+			setRegistryName("comberry_plant");
 		}
 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
 			return 100;
-		}
-
-		@Override
-		public PathNodeType getAiPathNodeType(BlockState state, IBlockReader world, BlockPos pos, MobEntity entity) {
-			return PathNodeType.WALKABLE;
 		}
 
 		@Override
@@ -144,6 +127,8 @@ public class BlackAntherBlock extends TesModElements.ModElement {
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+			if (state.get(BlockStateProperties.DOUBLE_BLOCK_HALF) != DoubleBlockHalf.LOWER)
+				return Collections.emptyList();
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;

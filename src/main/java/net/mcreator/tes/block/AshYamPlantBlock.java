@@ -56,13 +56,13 @@ import java.util.List;
 import java.util.Collections;
 
 @TesModElements.ModElement.Tag
-public class AshYamBlock extends TesModElements.ModElement {
-	@ObjectHolder("tes:ash_yam")
+public class AshYamPlantBlock extends TesModElements.ModElement {
+	@ObjectHolder("tes:ash_yam_plant")
 	public static final Block block = null;
-	@ObjectHolder("tes:ash_yam")
+	@ObjectHolder("tes:ash_yam_plant")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public AshYamBlock(TesModElements instance) {
-		super(instance, 18);
+	public AshYamPlantBlock(TesModElements instance) {
+		super(instance, 20);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
@@ -76,7 +76,7 @@ public class AshYamBlock extends TesModElements.ModElement {
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
 		public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("ash_yam"));
+			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("ash_yam_plant"));
 		}
 	}
 	@Override
@@ -111,8 +111,8 @@ public class AshYamBlock extends TesModElements.ModElement {
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
 									.tries(64).build())
 					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(5);
-			event.getRegistry().register(feature.setRegistryName("ash_yam"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tes:ash_yam"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("ash_yam_plant"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tes:ash_yam_plant"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
@@ -128,7 +128,7 @@ public class AshYamBlock extends TesModElements.ModElement {
 		public BlockCustomFlower() {
 			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("ash_yam");
+			setRegistryName("ash_yam_plant");
 		}
 
 		@Override

@@ -30,17 +30,19 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Direction;
+import net.minecraft.tileentity.TileEntityType;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.potion.Effects;
-import net.minecraft.pathfinding.PathNodeType;
+import net.minecraft.network.play.server.SUpdateTileEntityPacket;
+import net.minecraft.network.NetworkManager;
+import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FlowerBlock;
@@ -54,11 +56,14 @@ import java.util.List;
 import java.util.Collections;
 
 @TesModElements.ModElement.Tag
-public class StoneflowerBlock extends TesModElements.ModElement {
-	@ObjectHolder("tes:stoneflower")
+public class SaltricePlantBlock extends TesModElements.ModElement {
+	@ObjectHolder("tes:saltrice_plant")
 	public static final Block block = null;
-	public StoneflowerBlock(TesModElements instance) {
-		super(instance, 5);
+	@ObjectHolder("tes:saltrice_plant")
+	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
+	public SaltricePlantBlock(TesModElements instance) {
+		super(instance, 21);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -68,7 +73,12 @@ public class StoneflowerBlock extends TesModElements.ModElement {
 		elements.blocks.add(() -> new BlockCustomFlower());
 		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
 	}
-
+	private static class TileEntityRegisterHandler {
+		@SubscribeEvent
+		public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
+			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("saltrice_plant"));
+		}
+	}
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void clientLoad(FMLClientSetupEvent event) {
@@ -101,8 +111,8 @@ public class StoneflowerBlock extends TesModElements.ModElement {
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
 									.tries(64).build())
 					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(5);
-			event.getRegistry().register(feature.setRegistryName("stoneflower"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tes:stoneflower"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("saltrice_plant"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("tes:saltrice_plant"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
@@ -116,19 +126,14 @@ public class StoneflowerBlock extends TesModElements.ModElement {
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS, MaterialColor.BLUE).doesNotBlockMovement().sound(SoundType.PLANT)
+			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("stoneflower");
+			setRegistryName("saltrice_plant");
 		}
 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
 			return 100;
-		}
-
-		@Override
-		public PathNodeType getAiPathNodeType(BlockState state, IBlockReader world, BlockPos pos, MobEntity entity) {
-			return PathNodeType.WALKABLE;
 		}
 
 		@Override
@@ -146,7 +151,45 @@ public class StoneflowerBlock extends TesModElements.ModElement {
 
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
-			return PlantType.PLAINS;
+			return PlantType.CROP;
+		}
+
+		@Override
+		public boolean hasTileEntity(BlockState state) {
+			return true;
+		}
+
+		@Override
+		public TileEntity createTileEntity(BlockState state, IBlockReader world) {
+			return new CustomTileEntity();
+		}
+
+		@Override
+		public boolean eventReceived(BlockState state, World world, BlockPos pos, int eventID, int eventParam) {
+			super.eventReceived(state, world, pos, eventID, eventParam);
+			TileEntity tileentity = world.getTileEntity(pos);
+			return tileentity == null ? false : tileentity.receiveClientEvent(eventID, eventParam);
+		}
+	}
+
+	private static class CustomTileEntity extends TileEntity {
+		public CustomTileEntity() {
+			super(tileEntityType);
+		}
+
+		@Override
+		public SUpdateTileEntityPacket getUpdatePacket() {
+			return new SUpdateTileEntityPacket(this.pos, 0, this.getUpdateTag());
+		}
+
+		@Override
+		public CompoundNBT getUpdateTag() {
+			return this.write(new CompoundNBT());
+		}
+
+		@Override
+		public void onDataPacket(NetworkManager net, SUpdateTileEntityPacket pkt) {
+			this.read(this.getBlockState(), pkt.getNbtCompound());
 		}
 	}
 }
