@@ -1,0 +1,159 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "AscadianIsles",
+      "type": "biome",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ascadian_isles"
+    },
+    {
+      "name": "Heather",
+      "type": "plant",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "imperial"
+    },
+    {
+      "name": "Willowanther",
+      "type": "plant",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "willowanther"
+    },
+    {
+      "name": "Stoneflower",
+      "type": "plant",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stoneflower"
+    },
+    {
+      "name": "Ashlands",
+      "type": "biome",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ashlands"
+    },
+    {
+      "name": "RedMountain",
+      "type": "biome",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_mountain"
+    },
+    {
+      "name": "Sheogorad",
+      "type": "biome",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sheogorad"
+    },
+    {
+      "name": "WestGash",
+      "type": "biome",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "west_gash"
+    },
+    {
+      "name": "AzurasCoast",
+      "type": "biome",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "azuras_coast"
+    },
+    {
+      "name": "BitterCoast",
+      "type": "biome",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bitter_coast"
+    },
+    {
+      "name": "Grazelands",
+      "type": "biome",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grazelands"
+    },
+    {
+      "name": "MolagAmur",
+      "type": "biome",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "molag_amur"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "biome.tes.molag_amur": "Molag Amur",
+      "biome.tes.sheogorad": "Sheogorad",
+      "biome.tes.ascadian_isles_desc": "The Ascadian Isles are the lush, fertile, green lowlands on the south-southwestern corner of Vvardenfell. Settlements include Vivec City, Ebonheart, Suran and Pelagiad. The large Daedric ruins of Ald Sotha lie to the east of Vivec. Most of Vvardenfell\u0027s farms and plantations are in this region. These typically include Netch herding and agriculture. Marshmerrow is an important crop in this region. Slavery is common in this area, especially on the plantations and manor houses.",
+      "biome.tes.red_mountain": "Red Mountain",
+      "biome.tes.azuras_coast": "Azura\u0027s Coast",
+      "block.tes.stoneflower": "Stoneflower",
+      "block.tes.willowanther": "Willow Anther",
+      "biome.tes.ashlands": "Ashlands",
+      "biome.tes.grazelands": "Grazelands",
+      "block.tes.imperial": "Heather",
+      "item.tes.imperialsword_desc": "The Imperial Sword is a one-handed weapon. It serves as the primary melee weapon used by the Imperial Legion.",
+      "biome.tes.bitter_coast": "Bitter Coast",
+      "biome.tes.west_gash": "West Gash",
+      "biome.tes.ascadian_isles": "Ascadian Isles"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "tes",
+    "modName": "The Elder Scrolls",
+    "version": "1.0.0",
+    "description": "Dale\u0027s TES Port",
+    "author": "Dale_Hat",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "mcreator_link"
+    ],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.tes",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}
