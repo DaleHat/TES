@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "biome",
   "definition": {
-    "name": "Ascadian Isles",
+    "name": "Heartlands",
     "groundBlock": {
       "value": "Blocks.GRASS"
     },
@@ -27,7 +27,7 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "BEACH",
+    "biomeCategory": "NONE",
     "parent": {
       "value": "No parent"
     },

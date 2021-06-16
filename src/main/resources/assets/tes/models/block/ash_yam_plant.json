@@ -1,7 +1,0 @@
-{
-  "parent": "block/crop",
-  "textures": {
-    "crop": "tes:blocks/heather",
-    "particle": "tes:blocks/heather"
-  }
-}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "tes:blocks/sugar_cane",
+    "particle": "tes:blocks/sugar_cane"
+  }
+}

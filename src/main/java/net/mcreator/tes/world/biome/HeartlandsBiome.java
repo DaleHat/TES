@@ -31,10 +31,10 @@ import net.minecraft.block.Blocks;
 import net.mcreator.tes.TesModElements;
 
 @TesModElements.ModElement.Tag
-public class WestGashBiome extends TesModElements.ModElement {
+public class HeartlandsBiome extends TesModElements.ModElement {
 	public static Biome biome;
-	public WestGashBiome(TesModElements instance) {
-		super(instance, 44);
+	public HeartlandsBiome(TesModElements instance) {
+		super(instance, 45);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {
@@ -72,7 +72,7 @@ public class WestGashBiome extends TesModElements.ModElement {
 				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.NONE).depth(0.1f).scale(0.2f).temperature(0.5f)
 						.downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("tes:west_gash"));
+				event.getRegistry().register(biome.setRegistryName("tes:heartlands"));
 			}
 		}
 	}

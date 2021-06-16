@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=1": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=2": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=3": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=4": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=5": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=6": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=7": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=8": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=9": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=10": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=11": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=12": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=13": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=14": {
+      "model": "tes:block/moon_sugar_cane"
+    },
+    "age=15": {
+      "model": "tes:block/moon_sugar_cane"
+    }
+  }
+}

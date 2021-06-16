@@ -34,7 +34,7 @@ import net.mcreator.tes.TesModElements;
 public class AzurasCoastBiome extends TesModElements.ModElement {
 	public static Biome biome;
 	public AzurasCoastBiome(TesModElements instance) {
-		super(instance, 10);
+		super(instance, 38);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

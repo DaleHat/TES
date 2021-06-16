@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "biome",
   "definition": {
-    "name": "Ascadian Isles",
+    "name": "Inner Sea",
     "groundBlock": {
       "value": "Blocks.GRASS"
     },
@@ -27,14 +27,14 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "BEACH",
+    "biomeCategory": "OCEAN",
     "parent": {
       "value": "No parent"
     },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
-    "heightVariation": 0.2,
+    "heightVariation": 0.0,
     "biomeType": "WARM",
     "spawnBiome": false,
     "biomeWeight": 10,
@@ -67,20 +67,30 @@
     },
     "spawnStronghold": true,
     "spawnMineshaft": true,
-    "spawnPillagerOutpost": true,
-    "villageType": "plains",
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
     "spawnIgloo": false,
-    "spawnOceanMonument": false,
-    "spawnShipwreck": false,
+    "spawnOceanMonument": true,
+    "spawnShipwreck": true,
     "oceanRuinType": "NONE",
     "defaultFeatures": [
       "Caves",
       "Ores",
       "FrozenTopLayer"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityAnimal"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "waterCreature"
+      }
+    ]
   }
 }

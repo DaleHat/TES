@@ -4,194 +4,407 @@
     {
       "name": "AscadianIsles",
       "type": "biome",
-      "sortid": 1,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ascadian_isles"
+      "registry_name": "ascadian_isles",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind"
     },
     {
       "name": "Ashlands",
       "type": "biome",
-      "sortid": 6,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ashlands"
-    },
-    {
-      "name": "RedMountain",
-      "type": "biome",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "red_mountain"
-    },
-    {
-      "name": "Sheogorad",
-      "type": "biome",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sheogorad"
-    },
-    {
-      "name": "WestGash",
-      "type": "biome",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "west_gash"
+      "registry_name": "ashlands",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind"
     },
     {
       "name": "AzurasCoast",
       "type": "biome",
-      "sortid": 10,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "azuras_coast"
+      "registry_name": "azuras_coast",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind"
     },
     {
       "name": "BitterCoast",
       "type": "biome",
-      "sortid": 11,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "bitter_coast"
+      "registry_name": "bitter_coast",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind"
     },
     {
       "name": "Grazelands",
       "type": "biome",
-      "sortid": 12,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "grazelands"
+      "registry_name": "grazelands",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind"
     },
     {
       "name": "MolagAmur",
       "type": "biome",
-      "sortid": 13,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "molag_amur"
+      "registry_name": "molag_amur",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind"
     },
     {
-      "name": "CorkbulbPlant",
-      "type": "plant",
-      "sortid": 19,
+      "name": "RedMountain",
+      "type": "biome",
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "corkbulb_plant"
+      "registry_name": "red_mountain",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind"
     },
     {
-      "name": "AshYamPlant",
-      "type": "plant",
-      "sortid": 20,
+      "name": "Sheogorad",
+      "type": "biome",
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ash_yam_plant"
+      "registry_name": "sheogorad",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind"
     },
     {
-      "name": "SaltricePlant",
-      "type": "plant",
-      "sortid": 21,
+      "name": "WestGash",
+      "type": "biome",
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "saltrice_plant"
+      "registry_name": "west_gash",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind"
     },
     {
-      "name": "ComberryPlant",
-      "type": "plant",
-      "sortid": 22,
+      "name": "Heartlands",
+      "type": "biome",
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "comberry_plant"
+      "registry_name": "heartlands",
+      "path": "~/Mundus/Nirn/Tamriel/Cyrodiil"
     },
     {
-      "name": "BlackAntherPlant",
-      "type": "plant",
-      "sortid": 23,
+      "name": "InnerSea",
+      "type": "biome",
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "black_anther_plant"
+      "registry_name": "inner_sea",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind/Bodies of Water"
     },
     {
-      "name": "GoldKanetPlant",
-      "type": "plant",
-      "sortid": 24,
+      "name": "LakeAmaya",
+      "type": "biome",
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "gold_kanet_plant"
+      "registry_name": "lake_amaya",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind/Bodies of Water"
     },
     {
-      "name": "StoneflowerPlant",
-      "type": "plant",
-      "sortid": 25,
+      "name": "LakeHairan",
+      "type": "biome",
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stoneflower_plant"
+      "registry_name": "lake_hairan",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind/Bodies of Water"
     },
     {
-      "name": "WilliowAntherPlant",
-      "type": "plant",
-      "sortid": 26,
+      "name": "LakeMasobi",
+      "type": "biome",
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "williow_anther_plant"
+      "registry_name": "lake_masobi",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind/Bodies of Water"
     },
     {
-      "name": "HeatherPlant",
-      "type": "plant",
-      "sortid": 27,
+      "name": "LakeNabia",
+      "type": "biome",
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "heather_plant"
+      "registry_name": "lake_nabia",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind/Bodies of Water"
+    },
+    {
+      "name": "OdaiRiver",
+      "type": "biome",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "odai_river",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind/Bodies of Water"
+    },
+    {
+      "name": "RiverSamsi",
+      "type": "biome",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "river_samsi",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind/Bodies of Water"
+    },
+    {
+      "name": "ThirRiver",
+      "type": "biome",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thir_river",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind/Bodies of Water"
+    },
+    {
+      "name": "ZafirbelBay",
+      "type": "biome",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "zafirbel_bay",
+      "path": "~/Mundus/Nirn/Tamriel/Morrowind/Bodies of Water"
+    },
+    {
+      "name": "MoonSugarCane",
+      "type": "plant",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "moon_sugar_cane",
+      "path": "~/Biology/Flora"
+    },
+    {
+      "name": "MoonSugar",
+      "type": "food",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "moon_sugar",
+      "path": "~/Alchemy"
+    },
+    {
+      "name": "Nightshade",
+      "type": "food",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nightshade",
+      "path": "~/Alchemy"
+    },
+    {
+      "name": "Skooma",
+      "type": "food",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skooma",
+      "path": "~/Drugs"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "biome.tes.molag_amur": "Molag Amur",
-      "block.tes.black_anther_plant": "Black Anther",
-      "biome.tes.sheogorad": "Sheogorad",
-      "block.tes.corkbulb_plant": "Corkbulb",
-      "biome.tes.grazelands": "Grazelands",
-      "block.tes.williow_anther_plant": "Willow Anther",
-      "block.tes.stoneflower_plant": "Stoneflower",
-      "block.tes.comberry_plant": "Comberry",
+      "biome.tes.molag_amur": "Ascadian Isles",
+      "biome.tes.thir_river": "Inner Sea",
+      "block.tes.moon_sugar_cane": "Moon Sugar Cane",
+      "biome.tes.sheogorad": "Ascadian Isles",
+      "item.tes.nightshade": "Nightshade",
+      "biome.tes.heartlands": "Heartlands",
+      "biome.tes.odai_river": "Inner Sea",
       "biome.tes.ascadian_isles_desc": "The Ascadian Isles are the lush, fertile, green lowlands on the south-southwestern corner of Vvardenfell. Settlements include Vivec City, Ebonheart, Suran and Pelagiad. The large Daedric ruins of Ald Sotha lie to the east of Vivec. Most of Vvardenfell\u0027s farms and plantations are in this region. These typically include Netch herding and agriculture. Marshmerrow is an important crop in this region. Slavery is common in this area, especially on the plantations and manor houses.",
-      "biome.tes.bitter_coast": "Bitter Coast",
-      "biome.tes.red_mountain": "Red Mountain",
-      "block.tes.ash_yam_plant": "Ash Yam",
-      "biome.tes.azuras_coast": "Azura\u0027s Coast",
-      "block.tes.heather_plant": "Heather",
-      "biome.tes.west_gash": "West Gash",
-      "block.tes.saltrice_plant": "Saltrice",
-      "biome.tes.ashlands": "Ashlands",
-      "block.tes.gold_kanet_plant": "Gold Kanet",
+      "biome.tes.red_mountain": "Ascadian Isles",
+      "biome.tes.azuras_coast": "Ascadian Isles",
+      "biome.tes.lake_masobi": "Inner Sea",
+      "biome.tes.ashlands": "Ascadian Isles",
+      "biome.tes.lake_amaya": "Inner Sea",
+      "item.tes.skooma": "Skooma",
+      "biome.tes.inner_sea": "Inner Sea",
+      "biome.tes.zafirbel_bay": "Inner Sea",
+      "biome.tes.grazelands": "Ascadian Isles",
+      "biome.tes.lake_hairan": "Inner Sea",
+      "biome.tes.bitter_coast": "Ascadian Isles",
+      "biome.tes.river_samsi": "Inner Sea",
+      "biome.tes.west_gash": "Ascadian Isles",
+      "item.tes.moon_sugar": "Moon Sugar",
+      "biome.tes.lake_nabia": "Inner Sea",
       "biome.tes.ascadian_isles": "Ascadian Isles"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Mundus",
+        "children": [
+          {
+            "name": "Nirn",
+            "children": [
+              {
+                "name": "Tamriel",
+                "children": [
+                  {
+                    "name": "Black Marsh",
+                    "children": []
+                  },
+                  {
+                    "name": "Cyrodiil",
+                    "children": []
+                  },
+                  {
+                    "name": "Elsweyr",
+                    "children": []
+                  },
+                  {
+                    "name": "Hammerfell",
+                    "children": []
+                  },
+                  {
+                    "name": "High Rock",
+                    "children": []
+                  },
+                  {
+                    "name": "Morrowind",
+                    "children": [
+                      {
+                        "name": "Bodies of Water",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Skyrim",
+                    "children": []
+                  },
+                  {
+                    "name": "Summerset Isles",
+                    "children": []
+                  },
+                  {
+                    "name": "Valenwood",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Yokuda",
+                "children": []
+              },
+              {
+                "name": "Atmora",
+                "children": []
+              },
+              {
+                "name": "Akavir",
+                "children": []
+              },
+              {
+                "name": "Pyandonea",
+                "children": []
+              },
+              {
+                "name": "Thras",
+                "children": []
+              },
+              {
+                "name": "Aldmeris",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Biology",
+        "children": [
+          {
+            "name": "Flora",
+            "children": []
+          },
+          {
+            "name": "Fauna",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Alchemy",
+        "children": []
+      },
+      {
+        "name": "Drugs",
+        "children": []
+      },
+      {
+        "name": "Oblivion",
+        "children": [
+          {
+            "name": "Quagmire",
+            "children": []
+          },
+          {
+            "name": "Soul Cairn",
+            "children": []
+          },
+          {
+            "name": "Apocrypha",
+            "children": []
+          },
+          {
+            "name": "Coldharbour",
+            "children": []
+          },
+          {
+            "name": "Deadlands",
+            "children": []
+          },
+          {
+            "name": "Shivering Isles",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Aetherius",
+        "children": [
+          {
+            "name": "Sovngarde",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "tes",

@@ -2,9 +2,9 @@
   "_fv": 18,
   "_type": "biome",
   "definition": {
-    "name": "Molag Amur",
+    "name": "Ascadian Isles",
     "groundBlock": {
-      "value": "Blocks.BLACKSTONE"
+      "value": "Blocks.GRASS"
     },
     "undergroundBlock": {
       "value": "Blocks.STONE#0"
@@ -27,19 +27,19 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "MESA",
+    "biomeCategory": "NONE",
     "parent": {
       "value": "No parent"
     },
-    "rainingPossibility": 0.0,
-    "temperature": 1.5,
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
-    "biomeType": "DESERT",
+    "biomeType": "WARM",
     "spawnBiome": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
-    "grassPerChunk": 0,
+    "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
@@ -48,7 +48,7 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 0,
+    "treesPerChunk": 1,
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,
@@ -68,7 +68,7 @@
     "spawnStronghold": true,
     "spawnMineshaft": true,
     "spawnPillagerOutpost": true,
-    "villageType": "none",
+    "villageType": "plains",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,

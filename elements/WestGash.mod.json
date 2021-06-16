@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "biome",
   "definition": {
-    "name": "West Gash",
+    "name": "Ascadian Isles",
     "groundBlock": {
       "value": "Blocks.GRASS"
     },
@@ -27,7 +27,7 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "EXTREME_HILLS",
+    "biomeCategory": "NONE",
     "parent": {
       "value": "No parent"
     },
