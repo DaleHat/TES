@@ -230,6 +230,76 @@
       "ids": {},
       "registry_name": "skooma",
       "path": "~/Drugs"
+    },
+    {
+      "name": "ElthericOcean",
+      "type": "biome",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eltheric_ocean",
+      "path": "~/Mundus/Nirn"
+    },
+    {
+      "name": "SeaofGhosts",
+      "type": "biome",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sea_of_ghosts",
+      "path": "~/Mundus/Nirn"
+    },
+    {
+      "name": "PadomaicOcean",
+      "type": "biome",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "padomaic_ocean",
+      "path": "~/Mundus/Nirn"
+    },
+    {
+      "name": "AbeceanSea",
+      "type": "biome",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "abecean_sea",
+      "path": "~/Mundus/Nirn"
+    },
+    {
+      "name": "IliacBay",
+      "type": "biome",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iliac_bay",
+      "path": "~/Mundus/Nirn"
+    },
+    {
+      "name": "TheBlueDivide",
+      "type": "biome",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_blue_divide",
+      "path": "~/Mundus/Nirn"
+    },
+    {
+      "name": "TheGreatDivide",
+      "type": "biome",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_great_divide",
+      "path": "~/Mundus/Nirn"
     }
   ],
   "variable_elements": [],
@@ -241,25 +311,32 @@
       "block.tes.moon_sugar_cane": "Moon Sugar Cane",
       "biome.tes.sheogorad": "Sheogorad",
       "item.tes.nightshade": "Nightshade",
+      "biome.tes.the_great_divide": "The Great Divide",
       "biome.tes.heartlands": "Heartlands",
       "biome.tes.odai_river": "Odai River",
       "biome.tes.ascadian_isles_desc": "The Ascadian Isles are the lush, fertile, green lowlands on the south-southwestern corner of Vvardenfell. Settlements include Vivec City, Ebonheart, Suran and Pelagiad. The large Daedric ruins of Ald Sotha lie to the east of Vivec. Most of Vvardenfell\u0027s farms and plantations are in this region. These typically include Netch herding and agriculture. Marshmerrow is an important crop in this region. Slavery is common in this area, especially on the plantations and manor houses.",
+      "biome.tes.iliac_bay": "Iliac Bay",
       "biome.tes.red_mountain": "Red Mountain",
       "biome.tes.azuras_coast": "Azuras Coast",
+      "biome.tes.padomaic_ocean": "Padomaic Ocean",
       "biome.tes.lake_masobi": "Lake Masobi",
       "biome.tes.ashlands": "Ashlands",
       "biome.tes.lake_amaya": "Lake Amaya",
       "item.tes.skooma": "Skooma",
       "biome.tes.inner_sea": "Inner Sea",
+      "biome.tes.abecean_sea": "Abecean Sea",
       "biome.tes.zafirbel_bay": "Zafirbel Bay",
       "biome.tes.grazelands": "Grazelands",
       "biome.tes.lake_hairan": "Lake Hairan",
       "biome.tes.bitter_coast": "Bitter Coast",
       "biome.tes.river_samsi": "River Samsi",
+      "biome.tes.sea_of_ghosts": "Seaof Ghosts",
+      "biome.tes.the_blue_divide": "The Blue Divide",
       "biome.tes.west_gash": "West Gash",
       "item.tes.moon_sugar": "Moon Sugar",
       "biome.tes.lake_nabia": "Lake Nabia",
-      "biome.tes.ascadian_isles": "Ascadian Isles"
+      "biome.tes.ascadian_isles": "Ascadian Isles",
+      "biome.tes.eltheric_ocean": "Eltheric Ocean"
     }
   },
   "foldersRoot": {
