@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "biome",
   "definition": {
-    "name": "Inner Sea",
+    "name": "Lake Nabia",
     "groundBlock": {
       "value": "Blocks.GRASS"
     },
