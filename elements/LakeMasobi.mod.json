@@ -4,10 +4,10 @@
   "definition": {
     "name": "Lake Masobi",
     "groundBlock": {
-      "value": "Blocks.GRASS"
+      "value": "Blocks.SAND#0"
     },
     "undergroundBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "Blocks.GRAVEL"
     },
     "ambientSound": {
       "value": ""
@@ -29,26 +29,26 @@
     "particlesProbability": 0.5,
     "biomeCategory": "OCEAN",
     "parent": {
-      "value": "No parent"
+      "value": "ocean"
     },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.0,
+    "baseHeight": -1.0,
+    "heightVariation": 0.2,
     "biomeType": "WARM",
     "spawnBiome": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
-    "grassPerChunk": 4,
+    "grassPerChunk": 0,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 4,
+    "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 1,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,
@@ -81,16 +81,6 @@
       "Ores",
       "FrozenTopLayer"
     ],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntityAnimal"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "waterCreature"
-      }
-    ]
+    "spawnEntries": []
   }
 }

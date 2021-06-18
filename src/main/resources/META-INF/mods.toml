@@ -22,7 +22,7 @@ Dale's TES Port
 
 
 [[dependencies.tes]]
-    modId="mcreator_link"
+    modId="lotr"
     mandatory=true
     versionRange="[0,)"
     ordering="NONE"

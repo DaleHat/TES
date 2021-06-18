@@ -307,8 +307,8 @@
   "language_map": {
     "en_us": {
       "biome.tes.molag_amur": "Molag Amur",
-      "biome.tes.thir_river": "Thir River",
       "block.tes.moon_sugar_cane": "Moon Sugar Cane",
+      "biome.tes.thir_river": "Thir River",
       "biome.tes.sheogorad": "Sheogorad",
       "item.tes.nightshade": "Nightshade",
       "biome.tes.the_great_divide": "The Great Divide",
@@ -493,12 +493,12 @@
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "requiredMods": [],
+    "requiredMods": [
+      "lotr"
+    ],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "mcreator_link"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.tes",
