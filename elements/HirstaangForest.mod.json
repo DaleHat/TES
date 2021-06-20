@@ -27,15 +27,15 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "TAIGA",
     "parent": {
-      "value": "No parent"
+      "value": "taiga_cold"
     },
     "rainingPossibility": 0.5,
-    "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.2,
-    "biomeType": "WARM",
+    "temperature": 0.1,
+    "baseHeight": 0.30000000000000004,
+    "heightVariation": 0.30000000000000004,
+    "biomeType": "COOL",
     "spawnBiome": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],

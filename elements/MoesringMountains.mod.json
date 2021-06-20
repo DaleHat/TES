@@ -27,15 +27,15 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "ICY",
     "parent": {
-      "value": "No parent"
+      "value": "snowy_mountains"
     },
     "rainingPossibility": 0.5,
-    "temperature": 0.5,
-    "baseHeight": 0.1,
+    "temperature": 0.1,
+    "baseHeight": 1.0,
     "heightVariation": 0.2,
-    "biomeType": "WARM",
+    "biomeType": "ICY",
     "spawnBiome": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],

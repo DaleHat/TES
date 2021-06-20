@@ -27,15 +27,15 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "DESERT",
     "parent": {
-      "value": "No parent"
+      "value": "desert"
     },
-    "rainingPossibility": 0.5,
-    "temperature": 0.5,
-    "baseHeight": 0.1,
+    "rainingPossibility": 0.0,
+    "temperature": 1.5,
+    "baseHeight": 0.30000000000000004,
     "heightVariation": 0.2,
-    "biomeType": "WARM",
+    "biomeType": "DESERT",
     "spawnBiome": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
