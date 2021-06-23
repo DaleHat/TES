@@ -660,6 +660,76 @@
       "ids": {},
       "registry_name": "moesring_mountains",
       "path": "~/Mundus/Nirn/Tamriel/Morrowind"
+    },
+    {
+      "name": "Atmora",
+      "type": "biome",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "atmora",
+      "path": "~/Mundus/Nirn/Atmora"
+    },
+    {
+      "name": "AtmoraMountains",
+      "type": "biome",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "atmora_mountains",
+      "path": "~/Mundus/Nirn/Atmora"
+    },
+    {
+      "name": "Kamal",
+      "type": "biome",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kamal",
+      "path": "~/Mundus/Nirn/Akavir/Kamal"
+    },
+    {
+      "name": "KamalMountains",
+      "type": "biome",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kamal_mountains",
+      "path": "~/Mundus/Nirn/Akavir/Kamal"
+    },
+    {
+      "name": "Tsaesci",
+      "type": "biome",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tsaesci",
+      "path": "~/Mundus/Nirn/Akavir/Tsaesci"
+    },
+    {
+      "name": "TangMo",
+      "type": "biome",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tang_mo",
+      "path": "~/Mundus/Nirn/Akavir/Tang Mo"
+    },
+    {
+      "name": "KaPoTun",
+      "type": "biome",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ka_po_tun",
+      "path": "~/Mundus/Nirn/Akavir/Ka_Po_Tun"
     }
   ],
   "variable_elements": [],
@@ -668,17 +738,19 @@
     "en_us": {
       "biome.tes.molag_amur": "Molag Amur",
       "biome.tes.lan_orethan": "Lan Orethan",
-      "block.tes.moon_sugar_cane": "Moon Sugar Cane",
       "biome.tes.mephalan_vales": "Mephalan Vales",
+      "block.tes.moon_sugar_cane": "Moon Sugar Cane",
       "biome.tes.sundered_scar": "Sundered Scar",
       "biome.tes.shipal_shin": "Shipal-Shin",
       "biome.tes.the_great_divide": "The Great Divide",
+      "biome.tes.kamal": "Kamal",
       "biome.tes.heartlands": "Heartlands",
       "biome.tes.odai_river": "Odai River",
       "biome.tes.telvanni_isles": "Telvanni Isles",
       "biome.tes.aranyon_pass": "Aranyon Pass",
       "biome.tes.helnim_fields": "Helnim Fields",
       "biome.tes.nedothril": "Nedothril",
+      "biome.tes.kamal_mountains": "Kamal",
       "biome.tes.padomaic_ocean": "Padomaic Ocean",
       "biome.tes.firemoth": "Firemoth",
       "biome.tes.ashlands": "Ashlands",
@@ -701,7 +773,9 @@
       "item.tes.moon_sugar": "Moon Sugar",
       "biome.tes.sacred_lands": "Sacred Lands",
       "biome.tes.deshaan_plains": "Deshaan Plains",
+      "biome.tes.atmora_mountains": "Atmora",
       "biome.tes.lake_nabia": "Lake Nabia",
+      "biome.tes.atmora": "Atmora",
       "biome.tes.eltheric_ocean": "Eltheric Ocean",
       "biome.tes.thir_river": "Thir River",
       "biome.tes.sheogorad": "Sheogorad",
@@ -712,8 +786,10 @@
       "biome.tes.iliac_bay": "Iliac Bay",
       "biome.tes.red_mountain": "Red Mountain",
       "biome.tes.azuras_coast": "Azuras Coast",
+      "biome.tes.tsaesci": "Tsaesci",
       "biome.tes.ascadian_bluffs": "Ascadian Bluffs",
       "biome.tes.lake_masobi": "Lake Masobi",
+      "biome.tes.ka_po_tun": "Ka Po Tun",
       "biome.tes.lake_amaya": "Lake Amaya",
       "biome.tes.julan_shar": "Julan-Shar",
       "biome.tes.felsaad_coast": "Felsaad Coast",
@@ -726,6 +802,7 @@
       "biome.tes.uld_vraech": "Uld Vraech",
       "biome.tes.molaghread": "Molaghread",
       "biome.tes.soluthis": "Soluthis",
+      "biome.tes.tang_mo": "Tang Mo",
       "biome.tes.sea_of_ghosts": "Seaof Ghosts",
       "biome.tes.mudflats": "Mudflats",
       "biome.tes.hirstaang_forest": "Hirstaang Forest",
@@ -800,7 +877,24 @@
               },
               {
                 "name": "Akavir",
-                "children": []
+                "children": [
+                  {
+                    "name": "Kamal",
+                    "children": []
+                  },
+                  {
+                    "name": "Tsaesci",
+                    "children": []
+                  },
+                  {
+                    "name": "Tang Mo",
+                    "children": []
+                  },
+                  {
+                    "name": "Ka_Po_Tun",
+                    "children": []
+                  }
+                ]
               },
               {
                 "name": "Pyandonea",
