@@ -29,10 +29,10 @@
     "particlesProbability": 0.5,
     "biomeCategory": "OCEAN",
     "parent": {
-      "value": "ocean"
+      "value": "warm_ocean"
     },
     "rainingPossibility": 0.5,
-    "temperature": 0.5,
+    "temperature": 1.0,
     "baseHeight": -1.0,
     "heightVariation": 0.2,
     "biomeType": "WARM",
@@ -78,8 +78,7 @@
     "oceanRuinType": "WARM",
     "defaultFeatures": [
       "Caves",
-      "Ores",
-      "FrozenTopLayer"
+      "Ores"
     ],
     "spawnEntries": []
   }

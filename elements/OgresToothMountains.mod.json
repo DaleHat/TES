@@ -2,12 +2,12 @@
   "_fv": 18,
   "_type": "biome",
   "definition": {
-    "name": "Eltheric Ocean",
+    "name": "Ogres Tooth Mountains",
     "groundBlock": {
       "value": "Blocks.SAND#0"
     },
     "undergroundBlock": {
-      "value": "Blocks.GRAVEL"
+      "value": "Blocks.SANDSTONE#0"
     },
     "ambientSound": {
       "value": ""
@@ -27,15 +27,15 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "OCEAN",
+    "biomeCategory": "DESERT",
     "parent": {
-      "value": "warm_ocean"
+      "value": "desert_hills"
     },
     "rainingPossibility": 0.5,
-    "temperature": 1.0,
-    "baseHeight": -1.0,
+    "temperature": 0.5,
+    "baseHeight": 1.0,
     "heightVariation": 0.2,
-    "biomeType": "WARM",
+    "biomeType": "DESERT",
     "spawnBiome": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
@@ -73,9 +73,9 @@
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
     "spawnIgloo": false,
-    "spawnOceanMonument": true,
-    "spawnShipwreck": true,
-    "oceanRuinType": "WARM",
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
     "defaultFeatures": [
       "Caves",
       "Ores"

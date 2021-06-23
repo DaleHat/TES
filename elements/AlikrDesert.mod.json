@@ -2,12 +2,12 @@
   "_fv": 18,
   "_type": "biome",
   "definition": {
-    "name": "Eltheric Ocean",
+    "name": "Alik'r Desert",
     "groundBlock": {
       "value": "Blocks.SAND#0"
     },
     "undergroundBlock": {
-      "value": "Blocks.GRAVEL"
+      "value": "Blocks.SANDSTONE#0"
     },
     "ambientSound": {
       "value": ""
@@ -27,15 +27,15 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "OCEAN",
+    "biomeCategory": "DESERT",
     "parent": {
-      "value": "warm_ocean"
+      "value": "desert"
     },
     "rainingPossibility": 0.5,
-    "temperature": 1.0,
-    "baseHeight": -1.0,
+    "temperature": 2.0,
+    "baseHeight": 0.1,
     "heightVariation": 0.2,
-    "biomeType": "WARM",
+    "biomeType": "DESERT",
     "spawnBiome": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
@@ -67,15 +67,15 @@
     },
     "spawnStronghold": true,
     "spawnMineshaft": true,
-    "spawnPillagerOutpost": false,
-    "villageType": "none",
+    "spawnPillagerOutpost": true,
+    "villageType": "desert",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
-    "spawnDesertPyramid": false,
+    "spawnDesertPyramid": true,
     "spawnIgloo": false,
-    "spawnOceanMonument": true,
-    "spawnShipwreck": true,
-    "oceanRuinType": "WARM",
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
     "defaultFeatures": [
       "Caves",
       "Ores"

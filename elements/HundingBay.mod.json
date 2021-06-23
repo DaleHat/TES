@@ -2,12 +2,12 @@
   "_fv": 18,
   "_type": "biome",
   "definition": {
-    "name": "Eltheric Ocean",
+    "name": "Hunding Bay",
     "groundBlock": {
       "value": "Blocks.SAND#0"
     },
     "undergroundBlock": {
-      "value": "Blocks.GRAVEL"
+      "value": "Blocks.SANDSTONE#0"
     },
     "ambientSound": {
       "value": ""
@@ -73,7 +73,7 @@
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
     "spawnIgloo": false,
-    "spawnOceanMonument": true,
+    "spawnOceanMonument": false,
     "spawnShipwreck": true,
     "oceanRuinType": "WARM",
     "defaultFeatures": [

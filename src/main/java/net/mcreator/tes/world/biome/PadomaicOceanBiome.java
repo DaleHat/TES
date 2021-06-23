@@ -22,7 +22,7 @@ import net.mcreator.tes.TesModElements;
 public class PadomaicOceanBiome extends TesModElements.ModElement {
 	public static Biome biome;
 	public PadomaicOceanBiome(TesModElements instance) {
-		super(instance, 61);
+		super(instance, 129);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {
@@ -38,12 +38,11 @@ public class PadomaicOceanBiome extends TesModElements.ModElement {
 				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
 				biomeGenerationSettings.withStructure(StructureFeatures.MONUMENT);
 				biomeGenerationSettings.withStructure(StructureFeatures.SHIPWRECK);
-				biomeGenerationSettings.withStructure(StructureFeatures.OCEAN_RUIN_WARM);
+				biomeGenerationSettings.withStructure(StructureFeatures.OCEAN_RUIN_COLD);
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.OCEAN).depth(-1f).scale(0.2f).temperature(0.5f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.SNOW).category(Biome.Category.OCEAN).depth(-1f).scale(0.2f).temperature(0.1f)
 						.downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("tes:padomaic_ocean"));

@@ -232,16 +232,6 @@
       "path": "~/Drugs"
     },
     {
-      "name": "ElthericOcean",
-      "type": "biome",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "eltheric_ocean",
-      "path": "~/Mundus/Nirn"
-    },
-    {
       "name": "SeaofGhosts",
       "type": "biome",
       "sortid": 60,
@@ -249,26 +239,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sea_of_ghosts",
-      "path": "~/Mundus/Nirn"
-    },
-    {
-      "name": "PadomaicOcean",
-      "type": "biome",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "padomaic_ocean",
-      "path": "~/Mundus/Nirn"
-    },
-    {
-      "name": "AbeceanSea",
-      "type": "biome",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "abecean_sea",
       "path": "~/Mundus/Nirn"
     },
     {
@@ -730,6 +700,206 @@
       "ids": {},
       "registry_name": "ka_po_tun",
       "path": "~/Mundus/Nirn/Akavir/Ka_Po_Tun"
+    },
+    {
+      "name": "AkosKasaz",
+      "type": "biome",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akos_kasaz",
+      "path": "~/Mundus/Nirn/Yokuda"
+    },
+    {
+      "name": "Bahia",
+      "type": "biome",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bahia",
+      "path": "~/Mundus/Nirn/Yokuda"
+    },
+    {
+      "name": "Irranhu",
+      "type": "biome",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "irranhu",
+      "path": "~/Mundus/Nirn/Yokuda"
+    },
+    {
+      "name": "Kanesh",
+      "type": "biome",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kanesh",
+      "path": "~/Mundus/Nirn/Yokuda"
+    },
+    {
+      "name": "Kardesh",
+      "type": "biome",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kardesh",
+      "path": "~/Mundus/Nirn/Yokuda"
+    },
+    {
+      "name": "Klithi",
+      "type": "biome",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "klithi",
+      "path": "~/Mundus/Nirn/Yokuda"
+    },
+    {
+      "name": "Moni",
+      "type": "biome",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "moni",
+      "path": "~/Mundus/Nirn/Yokuda"
+    },
+    {
+      "name": "Samara",
+      "type": "biome",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "samara",
+      "path": "~/Mundus/Nirn/Yokuda"
+    },
+    {
+      "name": "Yath",
+      "type": "biome",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yath",
+      "path": "~/Mundus/Nirn/Yokuda"
+    },
+    {
+      "name": "ElthericOcean",
+      "type": "biome",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "eltheric_ocean",
+      "path": "~/Mundus/Nirn/Oceans/Eltheric Ocean"
+    },
+    {
+      "name": "PadomaicOcean",
+      "type": "biome",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "padomaic_ocean",
+      "path": "~/Mundus/Nirn/Oceans/Padomaic Ocean"
+    },
+    {
+      "name": "AbeceanSea",
+      "type": "biome",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "abecean_sea",
+      "path": "~/Mundus/Nirn/Oceans/Eltheric Ocean"
+    },
+    {
+      "name": "Herne",
+      "type": "biome",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "herne",
+      "path": "~/Mundus/Nirn/Oceans/Eltheric Ocean/Eltheric islands/The Chain"
+    },
+    {
+      "name": "Cespar",
+      "type": "biome",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cespar",
+      "path": "~/Mundus/Nirn/Oceans/Eltheric Ocean/Eltheric islands/The Chain"
+    },
+    {
+      "name": "OgresToothMountains",
+      "type": "biome",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ogres_tooth_mountains",
+      "path": "~/Mundus/Nirn/Oceans/Eltheric Ocean/Eltheric islands/The Chain/Stros Mkai"
+    },
+    {
+      "name": "HundingBay",
+      "type": "biome",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hunding_bay",
+      "path": "~/Mundus/Nirn/Oceans/Eltheric Ocean/Eltheric islands/The Chain/Stros Mkai"
+    },
+    {
+      "name": "TheSpine",
+      "type": "biome",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_spine",
+      "path": "~/Mundus/Nirn/Oceans/Eltheric Ocean/Eltheric islands/The Chain/Stros Mkai"
+    },
+    {
+      "name": "IsleofNGasta",
+      "type": "biome",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "isleof_n_gasta",
+      "path": "~/Mundus/Nirn/Oceans/Eltheric Ocean/Eltheric islands/The Chain/Stros Mkai"
+    },
+    {
+      "name": "StrosMKai",
+      "type": "biome",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stros_m_kai",
+      "path": "~/Mundus/Nirn/Oceans/Eltheric Ocean/Eltheric islands/The Chain/Stros Mkai"
+    },
+    {
+      "name": "AlikrDesert",
+      "type": "biome",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "alikr_desert",
+      "path": "~/Mundus/Nirn/Tamriel/Hammerfell"
     }
   ],
   "variable_elements": [],
@@ -749,14 +919,18 @@
       "biome.tes.telvanni_isles": "Telvanni Isles",
       "biome.tes.aranyon_pass": "Aranyon Pass",
       "biome.tes.helnim_fields": "Helnim Fields",
+      "biome.tes.irranhu": "Irranhu",
       "biome.tes.nedothril": "Nedothril",
       "biome.tes.kamal_mountains": "Kamal",
+      "biome.tes.moni": "Moni",
       "biome.tes.padomaic_ocean": "Padomaic Ocean",
       "biome.tes.firemoth": "Firemoth",
       "biome.tes.ashlands": "Ashlands",
+      "biome.tes.akos_kasaz": "Akos Kasaz",
+      "biome.tes.kanesh": "Kanesh",
       "biome.tes.aanthirin": "Aanthirin",
-      "biome.tes.abecean_sea": "Abecean Sea",
       "biome.tes.isinfier_plains": "Isinfier Plains",
+      "biome.tes.abecean_sea": "Abecean Sea",
       "biome.tes.zafirbel_bay": "Zafirbel Bay",
       "biome.tes.arnesian_jungle": "Arnesian Jungle",
       "biome.tes.brodir_grove": "Brodir Grove",
@@ -765,6 +939,7 @@
       "biome.tes.thirsk": "Thirsk",
       "biome.tes.river_samsi": "River Samsi",
       "biome.tes.the_blue_divide": "The Blue Divide",
+      "biome.tes.ogres_tooth_mountains": "Ogres Tooth Mountains",
       "biome.tes.othreleth_woods": "Othreleth Woods",
       "biome.tes.roth_roryn": "Roth-Roryn",
       "biome.tes.west_gash": "West Gash",
@@ -784,31 +959,43 @@
       "biome.tes.velothi_mountains": "Velothi Mountains",
       "biome.tes.ascadian_isles_desc": "The Ascadian Isles are the lush, fertile, green lowlands on the south-southwestern corner of Vvardenfell. Settlements include Vivec City, Ebonheart, Suran and Pelagiad. The large Daedric ruins of Ald Sotha lie to the east of Vivec. Most of Vvardenfell\u0027s farms and plantations are in this region. These typically include Netch herding and agriculture. Marshmerrow is an important crop in this region. Slavery is common in this area, especially on the plantations and manor houses.",
       "biome.tes.iliac_bay": "Iliac Bay",
+      "biome.tes.stros_m_kai": "Stros M\u0027Kai",
       "biome.tes.red_mountain": "Red Mountain",
       "biome.tes.azuras_coast": "Azuras Coast",
       "biome.tes.tsaesci": "Tsaesci",
       "biome.tes.ascadian_bluffs": "Ascadian Bluffs",
       "biome.tes.lake_masobi": "Lake Masobi",
+      "biome.tes.kardesh": "Kardesh",
       "biome.tes.ka_po_tun": "Ka Po Tun",
+      "biome.tes.klithi": "Klithi",
       "biome.tes.lake_amaya": "Lake Amaya",
       "biome.tes.julan_shar": "Julan-Shar",
       "biome.tes.felsaad_coast": "Felsaad Coast",
+      "biome.tes.alikr_desert": "Alik\u0027r Desert",
       "item.tes.skooma": "Skooma",
       "biome.tes.inner_sea": "Inner Sea",
       "biome.tes.alt_orethan": "Alt Orethan",
+      "biome.tes.the_spine": "The Spine",
       "biome.tes.grazelands": "Grazelands",
       "biome.tes.salt_marsh": "Salt Marsh",
+      "biome.tes.samara": "Samara",
       "biome.tes.thirr_valley": "Thirr Valley",
+      "biome.tes.bahia": "Bahia",
+      "biome.tes.hunding_bay": "Hunding Bay",
       "biome.tes.uld_vraech": "Uld Vraech",
+      "biome.tes.isleof_n_gasta": "Isle of N\u0027Gasta",
       "biome.tes.molaghread": "Molaghread",
       "biome.tes.soluthis": "Soluthis",
       "biome.tes.tang_mo": "Tang Mo",
       "biome.tes.sea_of_ghosts": "Seaof Ghosts",
+      "biome.tes.cespar": "Cespar",
       "biome.tes.mudflats": "Mudflats",
+      "biome.tes.herne": "Herne",
       "biome.tes.hirstaang_forest": "Hirstaang Forest",
       "biome.tes.boethiahs_spine": "Boethiah\u0027s Spine",
       "biome.tes.armun_ashlands": "Armun Ashlands",
       "biome.tes.moesring_mountains": "Moesring Mountains",
+      "biome.tes.yath": "Yath",
       "biome.tes.ascadian_isles": "Ascadian Isles"
     }
   },
@@ -901,12 +1088,50 @@
                 "children": []
               },
               {
-                "name": "Thras",
+                "name": "Aldmeris",
                 "children": []
               },
               {
-                "name": "Aldmeris",
-                "children": []
+                "name": "Oceans",
+                "children": [
+                  {
+                    "name": "Eltheric Ocean",
+                    "children": [
+                      {
+                        "name": "Eltheric islands",
+                        "children": [
+                          {
+                            "name": "The Chain",
+                            "children": [
+                              {
+                                "name": "Stros Mkai",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Padomaic Ocean",
+                    "children": [
+                      {
+                        "name": "Padomaic islands",
+                        "children": [
+                          {
+                            "name": "Cathnoquey",
+                            "children": []
+                          },
+                          {
+                            "name": "Esroniet",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }

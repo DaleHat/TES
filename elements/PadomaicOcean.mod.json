@@ -29,13 +29,13 @@
     "particlesProbability": 0.5,
     "biomeCategory": "OCEAN",
     "parent": {
-      "value": "ocean"
+      "value": "cold_ocean"
     },
     "rainingPossibility": 0.5,
-    "temperature": 0.5,
+    "temperature": 0.1,
     "baseHeight": -1.0,
     "heightVariation": 0.2,
-    "biomeType": "WARM",
+    "biomeType": "COOL",
     "spawnBiome": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
@@ -75,11 +75,10 @@
     "spawnIgloo": false,
     "spawnOceanMonument": true,
     "spawnShipwreck": true,
-    "oceanRuinType": "WARM",
+    "oceanRuinType": "COLD",
     "defaultFeatures": [
       "Caves",
-      "Ores",
-      "FrozenTopLayer"
+      "Ores"
     ],
     "spawnEntries": []
   }

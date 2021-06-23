@@ -19,10 +19,10 @@ import net.minecraft.block.Blocks;
 import net.mcreator.tes.TesModElements;
 
 @TesModElements.ModElement.Tag
-public class ElthericOceanBiome extends TesModElements.ModElement {
+public class HundingBayBiome extends TesModElements.ModElement {
 	public static Biome biome;
-	public ElthericOceanBiome(TesModElements instance) {
-		super(instance, 128);
+	public HundingBayBiome(TesModElements instance) {
+		super(instance, 134);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {
@@ -33,10 +33,9 @@ public class ElthericOceanBiome extends TesModElements.ModElement {
 						.withSkyColor(7972607).withFoliageColor(10387789).withGrassColor(9470285).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.SAND.getDefaultState(),
-								Blocks.GRAVEL.getDefaultState(), Blocks.GRAVEL.getDefaultState())));
+								Blocks.SANDSTONE.getDefaultState(), Blocks.SANDSTONE.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.STRONGHOLD);
 				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
-				biomeGenerationSettings.withStructure(StructureFeatures.MONUMENT);
 				biomeGenerationSettings.withStructure(StructureFeatures.SHIPWRECK);
 				biomeGenerationSettings.withStructure(StructureFeatures.OCEAN_RUIN_WARM);
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
@@ -45,7 +44,7 @@ public class ElthericOceanBiome extends TesModElements.ModElement {
 				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.OCEAN).depth(-1f).scale(0.2f).temperature(1f)
 						.downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("tes:eltheric_ocean"));
+				event.getRegistry().register(biome.setRegistryName("tes:hunding_bay"));
 			}
 		}
 	}
