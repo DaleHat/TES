@@ -202,36 +202,6 @@
       "path": "~/Biology/Flora"
     },
     {
-      "name": "MoonSugar",
-      "type": "food",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "moon_sugar",
-      "path": "~/Alchemy"
-    },
-    {
-      "name": "Nightshade",
-      "type": "food",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "nightshade",
-      "path": "~/Alchemy"
-    },
-    {
-      "name": "Skooma",
-      "type": "food",
-      "sortid": 58,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "skooma",
-      "path": "~/Drugs"
-    },
-    {
       "name": "SeaofGhosts",
       "type": "biome",
       "sortid": 60,
@@ -900,6 +870,46 @@
       "ids": {},
       "registry_name": "alikr_desert",
       "path": "~/Mundus/Nirn/Tamriel/Hammerfell"
+    },
+    {
+      "name": "SeaofMists",
+      "type": "biome",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seaof_mists",
+      "path": "~/Mundus/Nirn/Oceans/Sea Of Mists"
+    },
+    {
+      "name": "NibenayBay",
+      "type": "biome",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nibenay_bay",
+      "path": "~/Mundus/Nirn/Tamriel/Cyrodiil"
+    },
+    {
+      "name": "TopalBay",
+      "type": "biome",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "topal_bay",
+      "path": "~/Mundus/Nirn/Tamriel/Cyrodiil"
+    },
+    {
+      "name": "CamidiStrait",
+      "type": "biome",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "camidi_strait",
+      "path": "~/Mundus/Nirn/Tamriel/Summerset Isles"
     }
   ],
   "variable_elements": [],
@@ -910,12 +920,12 @@
       "biome.tes.lan_orethan": "Lan Orethan",
       "biome.tes.mephalan_vales": "Mephalan Vales",
       "block.tes.moon_sugar_cane": "Moon Sugar Cane",
-      "biome.tes.sundered_scar": "Sundered Scar",
       "biome.tes.shipal_shin": "Shipal-Shin",
+      "biome.tes.sundered_scar": "Sundered Scar",
       "biome.tes.the_great_divide": "The Great Divide",
       "biome.tes.kamal": "Kamal",
-      "biome.tes.heartlands": "Heartlands",
       "biome.tes.odai_river": "Odai River",
+      "biome.tes.heartlands": "Heartlands",
       "biome.tes.telvanni_isles": "Telvanni Isles",
       "biome.tes.aranyon_pass": "Aranyon Pass",
       "biome.tes.helnim_fields": "Helnim Fields",
@@ -925,14 +935,15 @@
       "biome.tes.moni": "Moni",
       "biome.tes.padomaic_ocean": "Padomaic Ocean",
       "biome.tes.firemoth": "Firemoth",
-      "biome.tes.ashlands": "Ashlands",
       "biome.tes.akos_kasaz": "Akos Kasaz",
       "biome.tes.kanesh": "Kanesh",
+      "biome.tes.ashlands": "Ashlands",
       "biome.tes.aanthirin": "Aanthirin",
       "biome.tes.isinfier_plains": "Isinfier Plains",
       "biome.tes.abecean_sea": "Abecean Sea",
       "biome.tes.zafirbel_bay": "Zafirbel Bay",
       "biome.tes.arnesian_jungle": "Arnesian Jungle",
+      "biome.tes.topal_bay": "Topal Bay",
       "biome.tes.brodir_grove": "Brodir Grove",
       "biome.tes.lake_hairan": "Lake Hairan",
       "biome.tes.bitter_coast": "Bitter Coast",
@@ -945,7 +956,6 @@
       "biome.tes.west_gash": "West Gash",
       "biome.tes.old_ebonheart": "Old Ebonheart",
       "biome.tes.clambering_moor": "Clambering Moor",
-      "item.tes.moon_sugar": "Moon Sugar",
       "biome.tes.sacred_lands": "Sacred Lands",
       "biome.tes.deshaan_plains": "Deshaan Plains",
       "biome.tes.atmora_mountains": "Atmora",
@@ -955,9 +965,8 @@
       "biome.tes.thir_river": "Thir River",
       "biome.tes.sheogorad": "Sheogorad",
       "biome.tes.grey_meadows": "Grey Meadows",
-      "item.tes.nightshade": "Nightshade",
+      "biome.tes.seaof_mists": "Sea of Mists",
       "biome.tes.velothi_mountains": "Velothi Mountains",
-      "biome.tes.ascadian_isles_desc": "The Ascadian Isles are the lush, fertile, green lowlands on the south-southwestern corner of Vvardenfell. Settlements include Vivec City, Ebonheart, Suran and Pelagiad. The large Daedric ruins of Ald Sotha lie to the east of Vivec. Most of Vvardenfell\u0027s farms and plantations are in this region. These typically include Netch herding and agriculture. Marshmerrow is an important crop in this region. Slavery is common in this area, especially on the plantations and manor houses.",
       "biome.tes.iliac_bay": "Iliac Bay",
       "biome.tes.stros_m_kai": "Stros M\u0027Kai",
       "biome.tes.red_mountain": "Red Mountain",
@@ -968,34 +977,35 @@
       "biome.tes.kardesh": "Kardesh",
       "biome.tes.ka_po_tun": "Ka Po Tun",
       "biome.tes.klithi": "Klithi",
-      "biome.tes.lake_amaya": "Lake Amaya",
       "biome.tes.julan_shar": "Julan-Shar",
+      "biome.tes.lake_amaya": "Lake Amaya",
       "biome.tes.felsaad_coast": "Felsaad Coast",
       "biome.tes.alikr_desert": "Alik\u0027r Desert",
-      "item.tes.skooma": "Skooma",
       "biome.tes.inner_sea": "Inner Sea",
       "biome.tes.alt_orethan": "Alt Orethan",
       "biome.tes.the_spine": "The Spine",
       "biome.tes.grazelands": "Grazelands",
       "biome.tes.salt_marsh": "Salt Marsh",
       "biome.tes.samara": "Samara",
+      "biome.tes.camidi_strait": "Camidi Strait",
       "biome.tes.thirr_valley": "Thirr Valley",
       "biome.tes.bahia": "Bahia",
       "biome.tes.hunding_bay": "Hunding Bay",
       "biome.tes.uld_vraech": "Uld Vraech",
       "biome.tes.isleof_n_gasta": "Isle of N\u0027Gasta",
-      "biome.tes.molaghread": "Molaghread",
-      "biome.tes.soluthis": "Soluthis",
       "biome.tes.tang_mo": "Tang Mo",
+      "biome.tes.soluthis": "Soluthis",
+      "biome.tes.molaghread": "Molaghread",
       "biome.tes.sea_of_ghosts": "Seaof Ghosts",
       "biome.tes.cespar": "Cespar",
       "biome.tes.mudflats": "Mudflats",
       "biome.tes.herne": "Herne",
       "biome.tes.hirstaang_forest": "Hirstaang Forest",
       "biome.tes.boethiahs_spine": "Boethiah\u0027s Spine",
-      "biome.tes.armun_ashlands": "Armun Ashlands",
       "biome.tes.moesring_mountains": "Moesring Mountains",
       "biome.tes.yath": "Yath",
+      "biome.tes.armun_ashlands": "Armun Ashlands",
+      "biome.tes.nibenay_bay": "Nibenay Bay",
       "biome.tes.ascadian_isles": "Ascadian Isles"
     }
   },
@@ -1130,6 +1140,10 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "name": "Sea Of Mists",
+                    "children": []
                   }
                 ]
               }
@@ -1149,14 +1163,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Alchemy",
-        "children": []
-      },
-      {
-        "name": "Drugs",
-        "children": []
       },
       {
         "name": "Oblivion",
@@ -1192,6 +1198,281 @@
         "children": [
           {
             "name": "Sovngarde",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Materials",
+            "children": []
+          },
+          {
+            "name": "Styles",
+            "children": [
+              {
+                "name": "Normal",
+                "children": [
+                  {
+                    "name": "Abahs_Watch",
+                    "children": []
+                  },
+                  {
+                    "name": "Akaviri",
+                    "children": []
+                  },
+                  {
+                    "name": "Aldmeri_Dominion",
+                    "children": []
+                  },
+                  {
+                    "name": "Ancient_Elf",
+                    "children": []
+                  },
+                  {
+                    "name": "Ancient_Orc",
+                    "children": []
+                  },
+                  {
+                    "name": "Apostle",
+                    "children": []
+                  },
+                  {
+                    "name": "Argonian",
+                    "children": []
+                  },
+                  {
+                    "name": "Ashlander",
+                    "children": []
+                  },
+                  {
+                    "name": "Assassins_League",
+                    "children": []
+                  },
+                  {
+                    "name": "Barbaric",
+                    "children": []
+                  },
+                  {
+                    "name": "Bloodforge",
+                    "children": []
+                  },
+                  {
+                    "name": "Breton",
+                    "children": []
+                  },
+                  {
+                    "name": "Buoyant_Armiger",
+                    "children": []
+                  },
+                  {
+                    "name": "Celestial",
+                    "children": []
+                  },
+                  {
+                    "name": "Daedric",
+                    "children": []
+                  },
+                  {
+                    "name": "Daggerfall_Covenant",
+                    "children": []
+                  },
+                  {
+                    "name": "Dark_Brotherhood",
+                    "children": []
+                  },
+                  {
+                    "name": "Dark_Elf",
+                    "children": []
+                  },
+                  {
+                    "name": "Divine_Prosecution",
+                    "children": []
+                  },
+                  {
+                    "name": "Draugr",
+                    "children": []
+                  },
+                  {
+                    "name": "Dreadhorn",
+                    "children": []
+                  },
+                  {
+                    "name": "Dro-m_Athra",
+                    "children": []
+                  },
+                  {
+                    "name": "Dwarven",
+                    "children": []
+                  },
+                  {
+                    "name": "Ebonheart Pact",
+                    "children": []
+                  },
+                  {
+                    "name": "Ebonshadow",
+                    "children": []
+                  },
+                  {
+                    "name": "Ebony",
+                    "children": []
+                  },
+                  {
+                    "name": "Fanged_Worm",
+                    "children": []
+                  },
+                  {
+                    "name": "Glass",
+                    "children": []
+                  },
+                  {
+                    "name": "Grim_Harlequin",
+                    "children": []
+                  },
+                  {
+                    "name": "High_Elf",
+                    "children": []
+                  },
+                  {
+                    "name": "Hlaalu",
+                    "children": []
+                  },
+                  {
+                    "name": "Hollowjack",
+                    "children": []
+                  },
+                  {
+                    "name": "Horned_Dragon",
+                    "children": []
+                  },
+                  {
+                    "name": "Imperial",
+                    "children": []
+                  },
+                  {
+                    "name": "Khajiit",
+                    "children": []
+                  },
+                  {
+                    "name": "Malacath",
+                    "children": []
+                  },
+                  {
+                    "name": "Mazzatun",
+                    "children": []
+                  },
+                  {
+                    "name": "Mercenary",
+                    "children": []
+                  },
+                  {
+                    "name": "Militant_Ordinator",
+                    "children": []
+                  },
+                  {
+                    "name": "Minotaur",
+                    "children": []
+                  },
+                  {
+                    "name": "Morag_Tong",
+                    "children": []
+                  },
+                  {
+                    "name": "Nord",
+                    "children": []
+                  },
+                  {
+                    "name": "Orc",
+                    "children": []
+                  },
+                  {
+                    "name": "Order_of_the_Hour",
+                    "children": []
+                  },
+                  {
+                    "name": "Outlaw",
+                    "children": []
+                  },
+                  {
+                    "name": "Primal",
+                    "children": []
+                  },
+                  {
+                    "name": "Ra_Gada",
+                    "children": []
+                  },
+                  {
+                    "name": "Redguard",
+                    "children": []
+                  },
+                  {
+                    "name": "Redoran",
+                    "children": []
+                  },
+                  {
+                    "name": "Silken_Ring",
+                    "children": []
+                  },
+                  {
+                    "name": "Skinchanger",
+                    "children": []
+                  },
+                  {
+                    "name": "Soul-Shriven",
+                    "children": []
+                  },
+                  {
+                    "name": "Stalhrim_Frostcaster",
+                    "children": []
+                  },
+                  {
+                    "name": "Telvanni",
+                    "children": []
+                  },
+                  {
+                    "name": "Thieves_Guild",
+                    "children": []
+                  },
+                  {
+                    "name": "Trinimac",
+                    "children": []
+                  },
+                  {
+                    "name": "Wood_Elf",
+                    "children": []
+                  },
+                  {
+                    "name": "Worm_Cult",
+                    "children": []
+                  },
+                  {
+                    "name": "Xivkyn",
+                    "children": []
+                  },
+                  {
+                    "name": "Yokudan",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Undaunted",
+                "children": []
+              },
+              {
+                "name": "Signature",
+                "children": []
+              },
+              {
+                "name": "Special",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Artifacts",
             "children": []
           }
         ]
